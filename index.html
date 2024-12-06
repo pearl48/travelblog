@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Explore Travel Destinations</h1>
+        <p>Search for travel guides, tips, and must-visit destinations!</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search destinations...">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="filters">
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="guides">Travel Guides</option>
+                <option value="tips">Travel Tips</option>
+                <option value="destinations">Destinations</option>
+            </select>
+            <select id="sortFilter">
+                <option value="relevance">Relevance</option>
+                <option value="date">Date</option>
+            </select>
+        </div>
+        <div id="results" class="results">
+            <!-- Results will display here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
