@@ -1,0 +1,106 @@
+body {
+  background-image: url('https://wallpaperaccess.com/full/4190081.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-container {
+  width: 90%;
+  max-width: 700px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+}
+
+p {
+  color: #555;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.results {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.result-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.result-item h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.result-item p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+@media screen and (max-width: 480px) {
+  .search-box {
+      flex-direction: column;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  .filters {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
